@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  repo: elijahbocz/bclawrence-2.0
+  branch: master
 
 media_folder: static/assets
 public_folder: assets
