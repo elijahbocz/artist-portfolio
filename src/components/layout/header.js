@@ -7,7 +7,12 @@ const StyledHeader = styled.header`
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 3rem;
+  a {
+    text-decoration: none;
+  }
+
   h1 {
+    color: black;
     font-family: "EB Garamond", serif;
     font-size: 4rem;
     font-weight: 400;
@@ -75,33 +80,34 @@ const StyledNav = styled.nav`
 `;
 const Header = ({ siteTitle }) => (
   <StyledHeader>
-    <h1>
-      <Link to="/">{siteTitle}</Link></h1>
-      <StyledNav>
-        <ul>
-          <li>
-            <Link to={"/"}>Home</Link>
-          </li>
-          <li>
-            <Link to={"/sculpture"}>Sculpture</Link>
-          </li>
-          <li>
-            <Link to={"/painting"}>Painting</Link>
-          </li>
-          <li>
-            <Link to={"/solo-work"}>Solo Work</Link>
-          </li>
-          <li>
-            <Link to={"/bio"}>Bio</Link>
-          </li>
-          <li>
-            <Link to={"/cv"}>CV</Link>
-          </li>
-          <li>
-            <Link to={"/contact"}>Contact</Link>
-          </li>
-        </ul>
-      </StyledNav>
+    <Link to="/">
+      <h1>{siteTitle}</h1>
+    </Link>
+    <StyledNav>
+      <ul>
+        <li>
+          <Link to={"/"}>Home</Link>
+        </li>
+        <li>
+          <Link to={"/sculpture"}>Sculpture</Link>
+        </li>
+        <li>
+          <Link to={"/painting"}>Painting</Link>
+        </li>
+        <li>
+          <Link to={"/solo-work"}>Solo Work</Link>
+        </li>
+        <li>
+          <Link to={"/bio"}>Bio</Link>
+        </li>
+        <li>
+          <Link to={"/cv"}>CV</Link>
+        </li>
+        <li>
+          <Link to={"/contact"}>Contact</Link>
+        </li>
+      </ul>
+    </StyledNav>
   </StyledHeader>
 );
 
