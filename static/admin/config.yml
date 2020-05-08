@@ -16,3 +16,12 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Intro text, name: intro, widget: text }
           - { label: Image, name: image, widget: image }
+      - label: "Bio Page"
+        name: "bio"
+        file: "content/bio.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: First paragraph, name: firstParagraph, widget: text }
+          - { label: Second paragraph, name: secondParagraph, widget: text }
+          - { label: Third paragraph, name: thirdParagraph, widget: text }
+          - { label: Fourth paragraph, name: fourthParagraph, widget: text }
