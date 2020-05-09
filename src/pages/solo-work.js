@@ -3,25 +3,8 @@ import { graphql } from "gatsby";
 import styled from "styled-components";
 
 import Layout from "../components/layout/layout";
+import MasonryGrid from "../components/layout/masonry";
 import SEO from "../components/seo";
-
-const ImageGrid = styled.div`
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-auto-rows: minmax(50px, auto);
-
-  img {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  img:nth-child(5n) {
-    grid-column-end: span 2;
-  }
-`;
 
 const ImageItem = styled.div``;
 
@@ -30,7 +13,7 @@ const SoloWorkPage = props => {
   return (
     <Layout>
       <SEO title="Solo Work" />
-      <ImageGrid>
+      <MasonryGrid>
         {data.map((image, index) => {
           return (
             <ImageItem key={`${index}-cl`}>
@@ -38,7 +21,7 @@ const SoloWorkPage = props => {
             </ImageItem>
           );
         })}
-      </ImageGrid>
+      </MasonryGrid>
     </Layout>
   );
 };
@@ -47,7 +30,9 @@ export default SoloWorkPage;
 
 export const query = graphql`
   query {
-    allCloudinaryMedia(filter: { secure_url: { regex: "bclawrence/solo-work/" } }) {
+    allCloudinaryMedia(
+      filter: { secure_url: { regex: "bclawrence/solo-work/" } }
+    ) {
       edges {
         node {
           secure_url
