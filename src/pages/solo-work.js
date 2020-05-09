@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import styled from "styled-components";
 
 import Layout from "../components/layout/layout";
-import MasonryGrid from "../components/layout/masonry";
+import { MasonryGrid } from "../components/layout/masonry";
 import SEO from "../components/seo";
 
 const ImageItem = styled.div``;
