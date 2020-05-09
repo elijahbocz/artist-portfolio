@@ -1,17 +1,16 @@
 import React from "react";
-import { Helmet } from "react-helmet";
-import Layout from "../components/layout/layout";
+// import { graphql } from "gatsby";
 
-function SoloWorkPage() {
+import Layout from "../components/layout/layout";
+import SEO from "../components/seo";
+
+const SoloWorkPage = () => {
   return (
     <Layout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Solo Work</title>
-      </Helmet>
-      <p>Solo work</p>
+      <SEO title="Solo Work" />
+      <p>Solo Work</p>
     </Layout>
   );
-}
+};
 
 export default SoloWorkPage;

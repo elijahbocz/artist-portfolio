@@ -1,17 +1,16 @@
 import React from "react";
-import { Helmet } from "react-helmet";
-import Layout from "../components/layout/layout";
+// import { graphql } from "gatsby";
 
-function PaintingPage() {
+import Layout from "../components/layout/layout";
+import SEO from "../components/seo";
+
+const PaintingPage = () => {
   return (
     <Layout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Painting</title>
-      </Helmet>
+      <SEO title="Painting" />
       <p>Painting</p>
     </Layout>
   );
-}
+};
 
 export default PaintingPage;

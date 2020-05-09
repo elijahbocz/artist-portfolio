@@ -1,17 +1,16 @@
 import React from "react";
-import { Helmet } from "react-helmet";
-import Layout from "../components/layout/layout";
+// import { graphql } from "gatsby";
 
-function SculpturePage() {
+import Layout from "../components/layout/layout";
+import SEO from "../components/seo";
+
+const SculpturePage = () => {
   return (
     <Layout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Sculpture</title>
-      </Helmet>
+      <SEO title="Sculpture" />
       <p>Sculpture</p>
     </Layout>
   );
-}
+};
 
 export default SculpturePage;

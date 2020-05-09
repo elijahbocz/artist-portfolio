@@ -1,17 +1,16 @@
 import React from "react";
-import { Helmet } from "react-helmet";
-import Layout from "../components/layout/layout";
+// import { graphql } from "gatsby";
 
-function CVPage() {
+import Layout from "../components/layout/layout";
+import SEO from "../components/seo";
+
+const CVPage = () => {
   return (
     <Layout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>CV</title>
-      </Helmet>
+      <SEO title="CV" />
       <p>CV</p>
     </Layout>
   );
-}
+};
 
 export default CVPage;
