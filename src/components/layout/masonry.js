@@ -5,6 +5,7 @@ export const MasonryGrid = styled.div`
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-auto-rows: minmax(50px, auto);
+  margin: 0 2rem;
 
   img {
     display: flex;
@@ -13,7 +14,7 @@ export const MasonryGrid = styled.div`
     object-fit: cover;
   }
 
-  img:nth-child(5n) {
+  img:nth-child(3n) {
     grid-column-end: span 2;
   }
 `;

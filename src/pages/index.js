@@ -4,6 +4,14 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
 
+// TODO:
+// Limit 5(?) images and save src to md
+// those five will be accessible for the admin
+// parse md and assign to carousel
+
+// OR: (easier less configurable)
+// pull first five (by date) from Cloudinary/bclawrence/painting
+
 const IndexPage = props => {
   const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter;
   return (
