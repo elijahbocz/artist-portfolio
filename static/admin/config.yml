@@ -25,7 +25,7 @@ collections:
         file: "content/bio.md"
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: Body, name: body widget: markdown }
+          - { label: Body, name: body, widget: markdown }
       - label: "CV Page"
         name: "cv"
         file: "content/cv.md"

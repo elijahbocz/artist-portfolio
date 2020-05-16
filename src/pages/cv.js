@@ -65,8 +65,6 @@ const AppCVDetails = styled.div`
   }
 `;
 
-const Separator = styled.p``;
-
 const CVPage = props => {
   const html = props.data.allMarkdownRemark.edges[0].node.html;
   return (
