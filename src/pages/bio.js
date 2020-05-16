@@ -5,14 +5,11 @@ import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
 
 const BioPage = props => {
-  const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter;
+  const html = props.data.allMarkdownRemark.edges[0].node.html;
   return (
     <Layout>
       <SEO title="Bio" />
-      <p>{data.firstParagraph}</p>
-      <p>{data.secondParagraph}</p>
-      <p>{data.thirdParagraph}</p>
-      <p>{data.fourthParagraph}</p>
+      <div dangerouslySetInnerHTML={{ __html: html }}></div>
     </Layout>
   );
 };
@@ -21,19 +18,10 @@ export default BioPage;
 
 export const query = graphql`
   query {
-    allFile(
-      filter: { sourceInstanceName: { eq: "content" }, name: { eq: "bio" } }
-    ) {
+    allMarkdownRemark(filter: { frontmatter: { title: { eq: "bio" } } }) {
       edges {
         node {
-          childMarkdownRemark {
-            frontmatter {
-              firstParagraph
-              secondParagraph
-              thirdParagraph
-              fourthParagraph
-            }
-          }
+          html
         }
       }
     }

@@ -25,10 +25,7 @@ collections:
         file: "content/bio.md"
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: First paragraph, name: firstParagraph, widget: text }
-          - { label: Second paragraph, name: secondParagraph, widget: text }
-          - { label: Third paragraph, name: thirdParagraph, widget: text }
-          - { label: Fourth paragraph, name: fourthParagraph, widget: text }
+          - { label: Body, widget: markdown }
       - label: "CV Page"
         name: "cv"
         file: "content/cv.md"
@@ -36,5 +33,5 @@ collections:
           - {label: Education, name: education, widget: markdown}
           - {label: Exhibitions, name: exhibitions, widget: markdown}
           - {label: Press, name: press, widget: markdown}
-          - {label: Selected Collections, name: selected-collections, widget: markdown}
-          - {label: Honors/Awards, name: honors-awards, widget: markdown}
+          - {label: Selected Collections, name: selectedCollections, widget: markdown}
+          - {label: Honors/Awards, name: honorsAwards, widget: markdown}
