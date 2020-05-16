@@ -71,7 +71,7 @@ const CVPage = props => {
     <Layout>
       <SEO title="CV" />
       <AppCV>
-        <div dangerouslySetInnerHTML={{ __html: html }}></div>
+        <AppCVDetails dangerouslySetInnerHTML={{ __html: html }}></AppCVDetails>
       </AppCV>
     </Layout>
   );
