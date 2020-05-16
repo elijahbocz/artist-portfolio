@@ -25,13 +25,10 @@ collections:
         file: "content/bio.md"
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: Body, widget: markdown }
+          - { label: Body, name: body widget: markdown }
       - label: "CV Page"
         name: "cv"
         file: "content/cv.md"
         fields:
           - {label: Education, name: education, widget: markdown}
-          - {label: Exhibitions, name: exhibitions, widget: markdown}
-          - {label: Press, name: press, widget: markdown}
-          - {label: Selected Collections, name: selectedCollections, widget: markdown}
-          - {label: Honors/Awards, name: honorsAwards, widget: markdown}
+          - {label: Bdy, name: body, widget: markdown}

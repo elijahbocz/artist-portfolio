@@ -68,31 +68,12 @@ const AppCVDetails = styled.div`
 const Separator = styled.p``;
 
 const CVPage = props => {
-  const data = props.data.allMarkdownRemark.edges[0].node.childMarkdownRemark.frontmatter;
+  const html = props.data.allMarkdownRemark.edges[0].node.html;
   return (
     <Layout>
       <SEO title="CV" />
       <AppCV>
-        <p>
-          <strong>EDUCATION</strong>
-        </p>
-        <p>{data.education}</p>
-        <p>
-          <strong>EXHIBITIONS</strong>
-        </p>
-        <p>{data.exhibitions}</p>
-        <p>
-          <strong>PRESS</strong>
-        </p>
-        <p>{data.press}</p>
-        <p>
-          <strong>SELECTED COLLECTIONS</strong>
-        </p>
-        <p>{data.selectedCollections}</p>
-        <p>
-          <strong>HONORS/AWARDS</strong>
-        </p>
-        <p>{data.honorsAwards}</p>
+        <div dangerouslySetInnerHTML={{ __html: html }}></div>
       </AppCV>
     </Layout>
   );
@@ -102,17 +83,12 @@ export default CVPage;
 
 export const query = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(filter: { frontmatter: { title: { eq: "cv" } } }) {
       edges {
         node {
-          id
-          frontmatter {
-            education
-          }
-          excerpt
+          html
         }
       }
     }
-
   }
 `;
