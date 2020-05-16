@@ -17,7 +17,7 @@ const PaintingPage = props => {
         {data.map((image, index) => {
           return (
             <ImageItem key={`${index}-cl`}>
-              <img src={image.node.secure_url} alt="tester" />
+              <img src={image.node.secure_url} alt={image.node.context.custom.alt} />
             </ImageItem>
           );
         })}
@@ -36,6 +36,12 @@ export const query = graphql`
       edges {
         node {
           secure_url
+          context {
+            custom {
+              alt
+              caption
+            }
+          }
         }
       }
     }

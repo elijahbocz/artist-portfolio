@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "bclawrence-2.0",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Chase and Brooke Lawrence are an American-based husband and wife artist duo.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Elijah Bocz",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
     "dotenv": "^8.2.0",
