@@ -9,9 +9,11 @@ EDUCATION
 
 2013-17
 
-\- *Bachelor of Fine Arts (B.F.A.) degree*, Concentration in Drawing and Painting. School of Art & Design, Kennesaw State University, Kennesaw, GA. exhibitions: >- 2019
+\- *Bachelor of Fine Arts (B.F.A.) degree*, Concentration in Drawing and Painting. School of Art & Design, Kennesaw State University, Kennesaw, GA.
 
 EXHIBITIONS
+
+2019
 
 \- *Georgia On My Mind*, Elkor Art Gallery, Riga, Latvia. (Group, Invitational)
 

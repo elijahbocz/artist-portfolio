@@ -8,6 +8,10 @@ import SEO from "../components/seo";
 const AppBio = styled.div`
   padding: 1rem 6rem;
   font-family: "Lato", sans-serif;
+
+  p {
+    padding: 1rem;
+  }
   @media screen and (max-width: 1600px) {
     .App-bio {
       padding: 1rem 0;

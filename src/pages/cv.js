@@ -66,11 +66,22 @@ const AppCVDetails = styled.div`
 `;
 
 const CVPage = props => {
+  const data = props.data.allCloudinaryMedia.edges;
   const html = props.data.allMarkdownRemark.edges[0].node.html;
   return (
     <Layout>
       <SEO title="CV" />
       <AppCV>
+      {data.map((image, index) => {
+          return (
+            <img
+              src={image.node.secure_url}
+              alt="Exhibition"
+              key={`${index}-cl`}
+              className="item"
+            />
+          );
+        })}
         <AppCVDetails dangerouslySetInnerHTML={{ __html: html }}></AppCVDetails>
       </AppCV>
     </Layout>
@@ -85,6 +96,13 @@ export const query = graphql`
       edges {
         node {
           html
+        }
+      }
+    }
+    allCloudinaryMedia(filter: { secure_url: { regex: "bclawrence/cv/" } }) {
+      edges {
+        node {
+          secure_url
         }
       }
     }

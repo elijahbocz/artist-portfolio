@@ -14,6 +14,18 @@ const AppContactForm = styled.form`
     height: 150px;
     width: 300px;
   }
+
+  .submit-btn {
+    background-color: #000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .submit-btn:hover {
+    opacity: 0.8;
+  }
 `;
 
 const Separator = styled.p`
@@ -23,7 +35,7 @@ const Separator = styled.p`
 
 const InfoDiv = styled.div`
   p {
-    padding: 0.5rem;
+    padding: 0.75rem;
   }
 `;
 
@@ -56,7 +68,9 @@ const ContactPage = props => {
           <textarea name="message" id="message" rows="5" />
         </label>
         <Separator />
-        <button type="submit">Send</button>
+        <button type="submit" className="submit-btn">
+          Send
+        </button>
         <Separator />
         <InfoDiv dangerouslySetInnerHTML={{ __html: html }}></InfoDiv>
       </AppContactForm>

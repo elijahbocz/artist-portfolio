@@ -2,9 +2,7 @@
 title: contact
 ---
 
-Accepting portrait commissions. For more information, email:
-
-info@bclawrence.art
+Accepting portrait commissions. For more information, email: info@bclawrence.art
 
 PRICING:
 
