@@ -13,13 +13,6 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
-      - label: "Home Page"
-        name: "home"
-        file: "content/home.md"
-        fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Intro text, name: intro, widget: text }
-          - { label: Image, name: image, widget: image }
       - label: "Bio Page"
         name: "bio"
         file: "content/bio.md"
@@ -28,5 +21,10 @@ collections:
       - label: "CV Page"
         name: "cv"
         file: "content/cv.md"
+        fields:
+          - {label: Body, name: body, widget: markdown}
+      - label: "Contact Page"
+        name: "contact"
+        file: "content/contact.md"
         fields:
           - {label: Body, name: body, widget: markdown}

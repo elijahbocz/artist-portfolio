@@ -4,7 +4,6 @@ import styled from "styled-components";
 
 import Layout from "../components/layout/layout";
 import { MasonryGrid } from "../components/layout/masonry";
-import ProgressiveImage from "../components/progressive-image";
 import SEO from "../components/seo";
 
 const ImageItem = styled.div``;
@@ -18,7 +17,10 @@ const PaintingPage = props => {
         {data.map((image, index) => {
           return (
             <ImageItem key={`${index}-cl`}>
-              <ProgressiveImage src={image.node.secure_url} alt={image.node.context.custom.alt} />
+              <img
+                src={image.node.secure_url}
+                alt={image.node.context.custom.alt}
+              />
             </ImageItem>
           );
         })}
