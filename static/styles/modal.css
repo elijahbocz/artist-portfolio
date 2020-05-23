@@ -1,0 +1,12 @@
+__react_modal_image__medium_img {
+  width: 60% !important;
+  max-width: 60% !important;
+  max-height: none !important;
+}
+
+@media screen and (max-width: 750px) {
+  __react_modal_image__medium_img {
+    max-width: 80% !important;
+    max-height: none !important;
+  }
+}

@@ -1,27 +1,30 @@
 import React from "react";
 import { graphql } from "gatsby";
-import styled from "styled-components";
+import ModalImage from "react-modal-image";
 
+import "../../static/styles/masonry.css";
+import "../../static/styles/modal.css";
 import Layout from "../components/layout/layout";
-import { MasonryGrid } from "../components/layout/masonry";
 import SEO from "../components/seo";
-
-const ImageItem = styled.div``;
 
 const SculpturePage = props => {
   const data = props.data.allCloudinaryMedia.edges;
   return (
     <Layout>
       <SEO title="Sculpture" />
-      <MasonryGrid>
+      <div className="masonry">
         {data.map((image, index) => {
           return (
-            <ImageItem key={`${index}-cl`}>
-              <img src={image.node.secure_url} alt={image.node.context.custom.alt} />
-            </ImageItem>
+            <ModalImage
+              small={image.node.secure_url}
+              large={image.node.secure_url}
+              alt={image.node.context.custom.alt}
+              key={`${index}-cl`}
+              className="item"
+            />
           );
         })}
-      </MasonryGrid>
+      </div>
     </Layout>
   );
 };

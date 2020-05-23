@@ -1,0 +1,20 @@
+.masonry {
+  /* Masonry container */
+  column-count: 3;
+  column-gap: 1em;
+  margin: 0 2rem;
+}
+
+.item {
+  /* Masonry bricks or child elements */
+  background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    .masonry {
+        column-count: 1;
+    }
+}
