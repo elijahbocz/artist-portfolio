@@ -9,8 +9,16 @@ import SEO from "../components/seo";
 import Slider from "react-slick";
 
 const StyledImage = styled.img`
-  width: 80%;
+  width: 30%;
   margin: 0 auto;
+
+  @media screen and (max-width: 1300px) {
+    width: 50%;
+  }
+
+  @media screen and (max-width: 750px) {
+    width: 70%;
+  }
 `;
 
 const IndexPage = props => {
