@@ -9,7 +9,7 @@ import SEO from "../components/seo";
 import Slider from "react-slick";
 
 const StyledImage = styled.img`
-  width: 30%;
+  width: 40%;
   margin: 0 auto;
 
   @media screen and (max-width: 1300px) {
@@ -17,7 +17,7 @@ const StyledImage = styled.img`
   }
 
   @media screen and (max-width: 750px) {
-    width: 70%;
+    width: 60%;
   }
 `;
 
