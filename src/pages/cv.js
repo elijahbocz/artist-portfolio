@@ -21,18 +21,17 @@ const AppCV = styled.div`
     width: 35rem;
   }
   @media screen and (max-width: 700px) {
-    .App-cv {
-      display: flex;
-      flex-direction: column;
-      height: auto;
-      margin: 0 auto;
-      outline: none;
-      padding-top: 17px;
-      padding-bottom: 17px;
-      position: absolute;
-      transition: box-shadow 0.2s ease-in-out;
-    }
-    .App-cv img {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0 auto;
+    outline: none;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    position: absolute;
+    transition: box-shadow 0.2s ease-in-out;
+
+    img {
       width: 90%;
       padding-bottom: 3rem;
     }
@@ -72,7 +71,7 @@ const CVPage = props => {
     <Layout>
       <SEO title="CV" />
       <AppCV>
-      {data.map((image, index) => {
+        {data.map((image, index) => {
           return (
             <img
               src={image.node.secure_url}

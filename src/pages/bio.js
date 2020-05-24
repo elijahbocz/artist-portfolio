@@ -13,20 +13,14 @@ const AppBio = styled.div`
     padding: 1rem;
   }
   @media screen and (max-width: 1600px) {
-    .App-bio {
-      padding: 1rem 0;
-    }
+    padding: 1rem 0;
   }
   @media screen and (max-width: 1300px) {
-    .App-bio {
-      padding: 1rem 3rem;
-    }
+    padding: 1rem 3rem;
   }
   @media screen and (max-width: 700px) {
-    .App-bio {
-      margin: 0;
-      padding: 0;
-    }
+    margin: 0;
+    padding: 0;
   }
 `;
 

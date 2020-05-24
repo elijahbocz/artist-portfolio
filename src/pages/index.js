@@ -13,11 +13,11 @@ const StyledImage = styled.img`
   margin: 0 auto;
 
   @media screen and (max-width: 1300px) {
-    width: 50%;
+    width: 70%;
   }
 
   @media screen and (max-width: 750px) {
-    width: 60%;
+    width: 100%;
   }
 `;
 
