@@ -40,15 +40,7 @@ const StyledHeader = styled.header`
 `;
 
 const StyledNav = styled.nav`
-  ul {
-    list-style-type: none;
-    margin-right: 16px;
-    margin-top: 0;
-  }
-  ul li {
-    display: inline;
-  }
-  ul li a {
+  a {
     color: #a50909;
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
@@ -57,34 +49,29 @@ const StyledNav = styled.nav`
     padding: 0.9rem;
     text-decoration: none;
   }
-  ul li a:hover {
+  a:hover {
     color: #adadad;
     cursor: pointer;
   }
+
+  .linebreak {
+    display: none;
+  }
   @media screen and (max-width: 1300px) {
-    ul {
+    a {
       padding-bottom: 0;
       padding-top: 1rem;
     }
   }
   @media screen and (max-width: 700px) {
-    ul {
-      margin-right: 16px;
-      margin-top: 0;
-      // display: flex;
-    }
-    li {
-      padding: 0.5rem;
-      margin-bottom: 1rem;
-    }
-    ul li a {
+    a {
       font-size: 0.75rem;
       margin-right: 1rem;
       padding: 0;
     }
 
-    .line-break {
-      margin-right: 0.5rem;
+    .linebreak {
+      display: block;
     }
   }
 `;
@@ -94,30 +81,14 @@ const Header = ({ siteTitle }) => (
       <h1>{siteTitle}</h1>
     </Link>
     <StyledNav>
-      <ul>
-        <li>
-          <Link to={"/"}>Home</Link>
-        </li>
-        <li>
-          <Link to={"/sculpture"}>Sculpture</Link>
-        </li>
-        <li>
-          <Link to={"/painting"}>Painting</Link>
-        </li>
-        <li className="line-break">&nbsp;</li>{" "}
-        <li>
-          <Link to={"/solo-work"}>Solo Work</Link>
-        </li>
-        <li>
-          <Link to={"/bio"}>Bio</Link>
-        </li>
-        <li>
-          <Link to={"/cv"}>CV</Link>
-        </li>
-        <li>
-          <Link to={"/contact"}>Contact</Link>
-        </li>
-      </ul>
+      <Link to={"/"}>Home</Link>
+      <Link to={"/sculpture"}>Sculpture</Link>
+      <Link to={"/painting"}>Painting</Link>
+      <p className="linebreak"></p>
+      <Link to={"/solo-work"}>Solo Work</Link>
+      <Link to={"/bio"}>Bio</Link>
+      <Link to={"/cv"}>CV</Link>
+      <Link to={"/contact"}>Contact</Link>
     </StyledNav>
   </StyledHeader>
 );
