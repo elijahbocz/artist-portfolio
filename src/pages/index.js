@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import styled from "styled-components";
 import "../../node_modules/slick-carousel/slick/slick.css";
 import "../../node_modules/slick-carousel/slick/slick-theme.css";
+import LazyLoad from "react-lazyload";
 
 import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
@@ -46,9 +47,11 @@ const IndexPage = props => {
       <Slider {...settings}>
         {data.map((image, index) => {
           return (
-            <div key={`${index}-cl`}>
-              <StyledImage src={image.node.secure_url} />
-            </div>
+            <LazyLoad>
+              <div key={`${index}-cl`}>
+                <StyledImage src={image.node.secure_url} alt={image.node.alt} />
+              </div>
+            </LazyLoad>
           );
         })}
       </Slider>
