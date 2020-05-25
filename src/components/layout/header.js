@@ -20,7 +20,7 @@ const StyledHeader = styled.header`
     padding: 3.2rem;
   }
   h1:hover {
-    color: #adadad;
+    color: #808080;
     cursor: pointer;
   }
   @media screen and (max-width: 1300px) {
@@ -50,7 +50,7 @@ const StyledNav = styled.nav`
     text-decoration: none;
   }
   a:hover {
-    color: #adadad;
+    color: #808080;
     cursor: pointer;
   }
 
@@ -81,14 +81,28 @@ const Header = ({ siteTitle }) => (
       <h1>{siteTitle}</h1>
     </Link>
     <StyledNav>
-      <Link to={"/"}>Home</Link>
-      <Link to={"/sculpture"}>Sculpture</Link>
-      <Link to={"/painting"}>Painting</Link>
+      <Link to={"/"} activeStyle={{ color: "#808080" }}>
+        Home
+      </Link>
+      <Link to={"/sculpture"} activeStyle={{ color: "#808080" }}>
+        Sculpture
+      </Link>
+      <Link to={"/painting"} activeStyle={{ color: "#808080" }}>
+        Painting
+      </Link>
       <p className="linebreak"></p>
-      <Link to={"/solo-work"}>Solo Work</Link>
-      <Link to={"/bio"}>Bio</Link>
-      <Link to={"/cv"}>CV</Link>
-      <Link to={"/contact"}>Contact</Link>
+      <Link to={"/solo-work"} activeStyle={{ color: "#808080" }}>
+        Solo Work
+      </Link>
+      <Link to={"/bio"} activeStyle={{ color: "#808080" }}>
+        Bio
+      </Link>
+      <Link to={"/cv"} activeStyle={{ color: "#808080" }}>
+        CV
+      </Link>
+      <Link to={"/contact"} activeStyle={{ color: "#808080" }}>
+        Contact
+      </Link>
     </StyledNav>
   </StyledHeader>
 );
