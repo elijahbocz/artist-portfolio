@@ -74,7 +74,7 @@ const StyledNav = styled.nav`
     }
     li {
       padding: 0.5rem;
-      line-height: 1rem;
+      margin-bottom: 1rem;
     }
     ul li a {
       font-size: 0.75rem;

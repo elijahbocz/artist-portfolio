@@ -11,7 +11,6 @@ import Slider from "react-slick";
 const StyledImage = styled.img`
   width: 40%;
   margin: 0 auto;
-
   @media screen and (max-width: 1300px) {
     width: 70%;
   }
@@ -28,6 +27,7 @@ const IndexPage = props => {
     adaptiveWidth: true,
     autoplay: true,
     autoplaySpeed: 2500,
+    arrows: false,
     centerMode: true,
     className: "center",
     dots: false,
