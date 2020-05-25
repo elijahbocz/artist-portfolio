@@ -70,11 +70,16 @@ const StyledNav = styled.nav`
     ul {
       margin-right: 16px;
       margin-top: 0;
+      // display: flex;
+    }
+    li {
+      padding: 0.5rem;
+      line-height: 1rem;
     }
     ul li a {
       font-size: 0.75rem;
-      padding-right: 0.75rem;
-      padding-left: 0;
+      margin-right: 0.75rem;
+      padding: 0;
     }
   }
 `;
@@ -94,6 +99,7 @@ const Header = ({ siteTitle }) => (
         <li>
           <Link to={"/painting"}>Painting</Link>
         </li>
+        <li>&nbsp;</li>{" "}
         <li>
           <Link to={"/solo-work"}>Solo Work</Link>
         </li>
