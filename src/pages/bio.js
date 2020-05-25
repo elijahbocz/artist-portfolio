@@ -6,8 +6,10 @@ import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
 
 const AppBio = styled.div`
-  padding: 1rem 6rem;
   font-family: "Lato", sans-serif;
+  margin: 0 10rem;
+  padding: 1rem 6rem;
+
 
   p {
     padding: 1rem;
@@ -16,7 +18,8 @@ const AppBio = styled.div`
     padding: 1rem 0;
   }
   @media screen and (max-width: 1300px) {
-    padding: 1rem 3rem;
+    margin: 0 2rem;
+    padding: 0 3rem;
   }
   @media screen and (max-width: 700px) {
     margin: 0;
