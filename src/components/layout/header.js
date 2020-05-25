@@ -59,6 +59,7 @@ const StyledNav = styled.nav`
   }
   ul li a:hover {
     color: #adadad;
+    cursor: pointer;
   }
   @media screen and (max-width: 1300px) {
     ul {
@@ -78,8 +79,12 @@ const StyledNav = styled.nav`
     }
     ul li a {
       font-size: 0.75rem;
-      margin-right: 0.75rem;
+      margin-right: 1rem;
       padding: 0;
+    }
+
+    .line-break {
+      margin-right: 0.5rem;
     }
   }
 `;
@@ -99,7 +104,7 @@ const Header = ({ siteTitle }) => (
         <li>
           <Link to={"/painting"}>Painting</Link>
         </li>
-        <li>&nbsp;</li>{" "}
+        <li className="line-break">&nbsp;</li>{" "}
         <li>
           <Link to={"/solo-work"}>Solo Work</Link>
         </li>
