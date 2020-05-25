@@ -17,13 +17,14 @@ const SoloWorkPage = props => {
         {data.map((image, index) => {
           return (
             <LazyLoad>
-            <ModalImage
-              small={image.node.secure_url}
-              large={image.node.secure_url}
-              alt={image.node.context.custom.alt}
-              key={`${index}-cl`}
-              className="item"
-            /></LazyLoad>
+              <ModalImage
+                small={image.node.secure_url}
+                large={image.node.secure_url}
+                alt={image.node.context.custom.alt}
+                key={`${index}-cl`}
+                className="item"
+              />
+            </LazyLoad>
           );
         })}
       </div>

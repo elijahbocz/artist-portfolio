@@ -22,9 +22,14 @@ collections:
         name: "cv"
         file: "content/cv.md"
         fields:
-          - {label: Body, name: body, widget: markdown}
+          - { label: Body, name: body, widget: markdown }
       - label: "Contact Page"
         name: "contact"
         file: "content/contact.md"
         fields:
-          - {label: Body, name: body, widget: markdown}
+          - { label: Body, name: body, widget: markdown }
+      - label: "Update Page"
+        name: "update"
+        file: "content/update.md"
+        fields:
+          - { label: Body, name: body, widget: markdown }
