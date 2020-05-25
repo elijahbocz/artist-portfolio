@@ -48,13 +48,13 @@ const IndexPage = props => {
           return (
             <LazyLoad height={1000}>
               <div key={`${index}-cl`}>
-                {image.node.alt ? (
+                {image.node.context.custom.alt ? (
                   <StyledImage
                     src={image.node.secure_url}
-                    alt={image.node.alt}
+                    alt={image.node.context.custom.alt}
                   />
                 ) : (
-                  <StyledImage src={image.node.secure_url} alt="Painting" />
+                  <StyledImage src={image.node.secure_url} alt="Artwork" />
                 )}
               </div>
             </LazyLoad>
