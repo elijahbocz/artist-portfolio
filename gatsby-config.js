@@ -54,7 +54,7 @@ module.exports = {
         resourceType: `image`,
         prefix: `bclawrence/`,
         maxResults: 100,
-        context: true
+        context: true,
       },
     },
   ],
