@@ -26,6 +26,12 @@ const AppContactForm = styled.form`
   .submit-btn:hover {
     opacity: 0.8;
   }
+
+  @media screen and (max-width: 760px) {
+    input {
+      width: 285px;
+    }
+  }
 `;
 
 const Separator = styled.p`

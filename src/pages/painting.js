@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import ModalImage from "react-modal-image";
+import LazyLoad from "react-lazyload";
 
 import "../../static/styles/masonry.css";
 import "../../static/styles/modal.css";
@@ -15,13 +16,15 @@ const PaintingPage = props => {
       <div className="masonry">
         {data.map((image, index) => {
           return (
-            <ModalImage
-              small={image.node.secure_url}
-              large={image.node.secure_url}
-              alt={image.node.context.custom.alt}
-              key={`${index}-cl`}
-              className="item"
-            />
+            <LazyLoad>
+              <ModalImage
+                small={image.node.secure_url}
+                large={image.node.secure_url}
+                alt={image.node.context.custom.alt}
+                key={`${index}-cl`}
+                className="item"
+              />
+            </LazyLoad>
           );
         })}
       </div>

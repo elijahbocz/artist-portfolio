@@ -22,7 +22,7 @@ module.exports = {
         // background_color: `#663399`,
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        // icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `${__dirname}/static/assets/favicon-32x32.png`, // This path is relative to the root of the site.
       },
     },
     {
@@ -54,7 +54,7 @@ module.exports = {
         resourceType: `image`,
         prefix: `bclawrence/`,
         maxResults: 100,
-        context: true
+        context: true,
       },
     },
   ],

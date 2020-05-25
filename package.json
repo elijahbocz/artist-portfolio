@@ -25,6 +25,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.0.0",
+    "react-lazyload": "^2.6.7",
     "react-modal-image": "^2.5.0",
     "react-slick": "^0.26.1",
     "slick-carousel": "^1.8.1",

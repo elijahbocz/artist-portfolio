@@ -51,7 +51,7 @@ const StyledNav = styled.nav`
   ul li a {
     color: #a50909;
     font-family: "Roboto", sans-serif;
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.1rem;
     padding: 0.9rem;
@@ -72,7 +72,7 @@ const StyledNav = styled.nav`
       margin-top: 0;
     }
     ul li a {
-      font-size: 0.55rem;
+      font-size: 0.75rem;
       padding-right: 0.75rem;
       padding-left: 0;
     }
