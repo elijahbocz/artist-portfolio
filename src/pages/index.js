@@ -46,7 +46,7 @@ const IndexPage = props => {
       <Slider {...settings}>
         {data.map((image, index) => {
           return (
-            <LazyLoad>
+            <LazyLoad height={1000}>
               <div key={`${index}-cl`}>
                 {image.node.alt ? (
                   <StyledImage
