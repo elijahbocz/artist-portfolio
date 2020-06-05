@@ -14,7 +14,7 @@ const StyledHeader = styled.header`
   h1 {
     color: black;
     font-family: "EB Garamond", serif;
-    font-size: 4rem;
+    font-size: 3.3rem;
     font-weight: 400;
     letter-spacing: 0.5rem;
     padding: 3.2rem;
