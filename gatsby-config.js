@@ -54,7 +54,7 @@ module.exports = {
         apiSecret: process.env.CLOUDINARY_API_SECRET,
         resourceType: `image`,
         prefix: `bclawrence/`,
-        maxResults: 100,
+        maxResults: 255,
         context: true,
       },
     },

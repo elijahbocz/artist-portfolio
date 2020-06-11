@@ -84,16 +84,7 @@ const Header = ({ siteTitle }) => (
       <Link to={"/"} activeStyle={{ color: "#808080" }}>
         Home
       </Link>
-      <Link to={"/sculpture"} activeStyle={{ color: "#808080" }}>
-        Sculpture
-      </Link>
-      <Link to={"/painting"} activeStyle={{ color: "#808080" }}>
-        Painting
-      </Link>
-      <p className="linebreak"></p>
-      <Link to={"/solo-work"} activeStyle={{ color: "#808080" }}>
-        Solo Work
-      </Link>
+      <Link to={"/gallery/paintings"}>Gallery</Link>
       <Link to={"/bio"} activeStyle={{ color: "#808080" }}>
         Bio
       </Link>

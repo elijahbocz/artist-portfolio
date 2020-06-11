@@ -2,7 +2,7 @@
   /* Masonry container */
   column-count: 3;
   column-gap: 1em;
-  margin: 0 20rem;
+  margin: 0 7rem;
 }
 
 .item {
@@ -14,14 +14,14 @@
 }
 
 @media screen and (max-width: 1300px) {
-    .masonry {
-        margin: 0 5rem;
-    }
+  .masonry {
+    margin: 0 3rem;
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .masonry {
-        margin: 0 1rem;
-        column-count: 1;
-    }
+  .masonry {
+    margin: 0 1rem;
+    column-count: 1;
+  }
 }
