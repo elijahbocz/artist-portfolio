@@ -2,17 +2,13 @@ import React from "react";
 import { graphql } from "gatsby";
 import ModalImage from "react-modal-image";
 import LazyLoad from "react-lazyload";
-import styled from "styled-components";
 
 import "../../../static/styles/masonry.css";
 import "../../../static/styles/modal.css";
 import Layout from "../../components/layout/layout";
 import SEO from "../../components/seo";
 import Sidebar from "./sidebar";
-
-const FlexDiv = styled.div`
-  display: flex;
-`;
+import FlexDiv from "./gallery-div";
 
 const SoloWorksPage = props => {
   const data = props.data.allCloudinaryMedia.edges;

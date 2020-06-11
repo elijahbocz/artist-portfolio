@@ -84,9 +84,7 @@ const Header = ({ siteTitle }) => (
       <Link to={"/"} activeStyle={{ color: "#808080" }}>
         Home
       </Link>
-      <Link to={"/gallery/paintings"} activeStyle={{ color: "#808080" }}>
-        Gallery
-      </Link>
+      <Link to={"/gallery/paintings"}>Gallery</Link>
       <Link to={"/bio"} activeStyle={{ color: "#808080" }}>
         Bio
       </Link>
