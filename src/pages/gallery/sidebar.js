@@ -55,10 +55,6 @@ function Sidebar() {
         Paintings
       </Link>
       <p className="desktop-separator" />
-      <Link to={"/gallery/portraiture"} activeStyle={{ color: "#808080" }}>
-        Portraiture
-      </Link>
-      <p className="desktop-separator" />
       <Link to={"/gallery/sculpture"} activeStyle={{ color: "#808080" }}>
         Sculpture
       </Link>
