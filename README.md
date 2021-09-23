@@ -1,4 +1,4 @@
-This artist portfolio uses Gatsby to create a static site that is deployed on Netlify.
+This [artist portfolio](https://artist-portfolio-by-elijahbocz.netlify.app/) uses Gatsby to create a static site that is deployed on Netlify.
 
 Cloudinary is utilized for serving the images in conjunction with provided Gatsby plugins.
 
