@@ -2,7 +2,7 @@ require("dotenv").config();
 
 module.exports = {
   siteMetadata: {
-    title: `Artist Portfolio developed by Elijah Bocz`,
+    title: `Artist Portfolio`,
     description: `Artist portfolio with CMS built with Gatsbyjs`,
     author: `elijahbocz`,
   },
@@ -18,7 +18,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `ElijahBocz-ArtistPortfolio`,
-        short_name: `ebocz-artist-demo`,
+        short_name: `ebocz-artist-portfolio`,
         start_url: `/`,
         // background_color: `#663399`,
         // theme_color: `#663399`,
@@ -63,7 +63,6 @@ module.exports = {
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
-          "UA-LVW91034D-7", // Google Analytics / GA
         ],
       },
     },

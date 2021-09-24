@@ -9,7 +9,12 @@ const AppBio = styled.div`
   font-family: "Lato", sans-serif;
   margin: 0 10rem;
   padding: 1rem 6rem;
+  text-align: center;
 
+  a {
+    color: #a50909;
+    text-decoration: none;
+  }
   p {
     padding: 1rem;
   }

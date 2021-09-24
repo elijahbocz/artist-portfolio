@@ -1,4 +1,9 @@
 ---
 title: bio
 ---
-Chase and Brooke Lawrence are an American-based husband and wife artist duo. The Lawrences are sculptors and oil painters, best known for their ghastly and poignant style. Keeping with the methods and techniques of the Old Masters, they interchangeably work on every piece together to create highly ornamental and imposing pieces of art. Their work aims to explore new expressions of contemporary portraiture, esoteric philosophy, symbology, and allegory with an immediately recognizable and familiar aesthetic.
+This is the deprecated version of [BCLawrence.art](https://bclawrence.art) built by Elijah Bocz for Brooke and Chase Lawrence. 
+Images are provided with permission by artists for demonstration purposes.
+
+Gatsby is used to create a static site that is deployed on Netlify.
+Cloudinary is utilized for serving the images in conjunction with provided Gatsby plugins.
+A CMS is available using Netlify credentials which allows for new images to be uploaded by the artist, and a new build is triggered through continuous deployment on Netfliy.
