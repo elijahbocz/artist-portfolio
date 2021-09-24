@@ -33,7 +33,7 @@ const PaintingsPage = props => {
                   <ModalImage
                     small={image.node.secure_url}
                     large={image.node.secure_url}
-                    alt="Painting by Brooke and Chase Lawrence"
+                    alt="Painting"
                     key={`${index}-cl`}
                     className="item"
                   />

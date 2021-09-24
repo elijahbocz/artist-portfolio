@@ -33,7 +33,7 @@ const SculpturePage = props => {
                   <ModalImage
                     small={image.node.secure_url}
                     large={image.node.secure_url}
-                    alt="Sculpture by Brooke and Chase Lawrence"
+                    alt="Sculpture"
                     key={`${index}-cl`}
                     className="item"
                   />
@@ -52,7 +52,7 @@ export default SculpturePage;
 export const query = graphql`
   query {
     allCloudinaryMedia(
-      filter: { secure_url: { regex: "bclawrence/gallery/sculpture/" } }
+      filter: { secure_url: { regex: "artist-portfolio/gallery/sculpture/" } }
     ) {
       edges {
         node {
