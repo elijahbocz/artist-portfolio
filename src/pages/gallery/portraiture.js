@@ -42,17 +42,11 @@ export default PortraiturePage;
 export const query = graphql`
   query {
     allCloudinaryMedia(
-      filter: { secure_url: { regex: "bclawrence/gallery/portraiture/" } }
+      filter: { secure_url: { regex: "artist-portfolio/gallery/portraiture/" } }
     ) {
       edges {
         node {
           secure_url
-          context {
-            custom {
-              alt
-              caption
-            }
-          }
         }
       }
     }

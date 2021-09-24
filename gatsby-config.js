@@ -2,8 +2,8 @@ require("dotenv").config();
 
 module.exports = {
   siteMetadata: {
-    title: `The Art of Brooke & Chase Lawrence`,
-    description: `Chase and Brooke Lawrence are an American-based husband and wife artist duo.`,
+    title: `Artist Portfolio developed by Elijah Bocz`,
+    description: `Artist portfolio with CMS built with Gatsbyjs`,
     author: `elijahbocz`,
   },
   plugins: [
@@ -17,8 +17,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `BCLawrence-art`,
-        short_name: `bclawrence`,
+        name: `ElijahBocz-ArtistPortfolio`,
+        short_name: `ebocz-artist-demo`,
         start_url: `/`,
         // background_color: `#663399`,
         // theme_color: `#663399`,
@@ -53,7 +53,7 @@ module.exports = {
         apiKey: process.env.CLOUDINARY_API_KEY,
         apiSecret: process.env.CLOUDINARY_API_SECRET,
         resourceType: `image`,
-        prefix: `bclawrence/`,
+        prefix: `artist-portfolio/`,
         maxResults: 255,
         context: true,
       },

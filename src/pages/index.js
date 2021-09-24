@@ -48,7 +48,7 @@ const IndexPage = props => {
           return (
             <LazyLoad height={1000}>
               <div key={`${index}-cl`}>
-                {image.node.context.custom.alt ? (
+                {image.node.context ? (
                   <StyledImage
                     src={image.node.secure_url}
                     alt={image.node.context.custom.alt}
@@ -70,17 +70,11 @@ export default IndexPage;
 export const query = graphql`
   query {
     allCloudinaryMedia(
-      filter: { secure_url: { regex: "bclawrence/carousel/" } }
+      filter: { secure_url: { regex: "artist-portfolio/carousel/" } }
     ) {
       edges {
         node {
           secure_url
-          context {
-            custom {
-              alt
-              caption
-            }
-          }
         }
       }
     }

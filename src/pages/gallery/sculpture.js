@@ -21,13 +21,23 @@ const SculpturePage = props => {
           {data.map((image, index) => {
             return (
               <LazyLoad>
-                <ModalImage
-                  small={image.node.secure_url}
-                  large={image.node.secure_url}
-                  alt={image.node.context.custom.alt}
-                  key={`${index}-cl`}
-                  className="item"
-                />
+                {image.node.context ? (
+                  <ModalImage
+                    small={image.node.secure_url}
+                    large={image.node.secure_url}
+                    alt={image.node.context.custom.alt}
+                    key={`${index}-cl`}
+                    className="item"
+                  />
+                ) : (
+                  <ModalImage
+                    small={image.node.secure_url}
+                    large={image.node.secure_url}
+                    alt="Sculpture by Brooke and Chase Lawrence"
+                    key={`${index}-cl`}
+                    className="item"
+                  />
+                )}
               </LazyLoad>
             );
           })}
@@ -47,12 +57,6 @@ export const query = graphql`
       edges {
         node {
           secure_url
-          context {
-            custom {
-              alt
-              caption
-            }
-          }
         }
       }
     }

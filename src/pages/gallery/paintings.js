@@ -21,13 +21,23 @@ const PaintingsPage = props => {
           {data.map((image, index) => {
             return (
               <LazyLoad>
-                <ModalImage
-                  small={image.node.secure_url}
-                  large={image.node.secure_url}
-                  alt={image.node.context.custom.alt}
-                  key={`${index}-cl`}
-                  className="item"
-                />
+                {image.node.context ? (
+                  <ModalImage
+                    small={image.node.secure_url}
+                    large={image.node.secure_url}
+                    alt={image.node.context.custom.alt}
+                    key={`${index}-cl`}
+                    className="item"
+                  />
+                ) : (
+                  <ModalImage
+                    small={image.node.secure_url}
+                    large={image.node.secure_url}
+                    alt="Painting by Brooke and Chase Lawrence"
+                    key={`${index}-cl`}
+                    className="item"
+                  />
+                )}
               </LazyLoad>
             );
           })}
@@ -42,17 +52,11 @@ export default PaintingsPage;
 export const query = graphql`
   query {
     allCloudinaryMedia(
-      filter: { secure_url: { regex: "bclawrence/gallery/paintings/" } }
+      filter: { secure_url: { regex: "artist-portfolio/gallery/paintings/" } }
     ) {
       edges {
         node {
           secure_url
-          context {
-            custom {
-              alt
-              caption
-            }
-          }
         }
       }
     }

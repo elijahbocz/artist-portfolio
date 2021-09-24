@@ -61,7 +61,7 @@ const BioPage = props => {
           <StyledImage>
             <img
               src={image.node.secure_url}
-              alt={image.node.context.custom.alt}
+              alt="Artist"
               key={`${index}-cl`}
               className="item"
             />
@@ -84,15 +84,10 @@ export const query = graphql`
         }
       }
     }
-    allCloudinaryMedia(filter: { secure_url: { regex: "bclawrence/bio/" } }) {
+    allCloudinaryMedia(filter: { secure_url: { regex: "artist-portfolio/bio/" } }) {
       edges {
         node {
           secure_url
-          context {
-            custom {
-              alt
-            }
-          }
         }
       }
     }

@@ -98,7 +98,7 @@ export const query = graphql`
         }
       }
     }
-    allCloudinaryMedia(filter: { secure_url: { regex: "bclawrence/cv/" } }) {
+    allCloudinaryMedia(filter: { secure_url: { regex: "artist-portoflio/cv/" } }) {
       edges {
         node {
           secure_url
