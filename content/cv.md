@@ -5,11 +5,7 @@ title: cv
 
 **2014-19**
 
-\- *Bachelor of Fine Arts* (B.F.A.) degree, Concentration in Drawing and Painting. School of Art & Design (SOAAD), Kennesaw State University, Kennesaw, GA. (Brooke Lawrence)
-
-**2013-17**
-
-\- *Bachelor of Fine Arts (B.F.A.) degree*, Concentration in Drawing and Painting. School of Art & Design, Kennesaw State University, Kennesaw, GA.
+\- *Bachelor of Fine Arts* (B.F.A.) degree, Concentration in Drawing and Painting. School of Art & Design (SOAAD), Kennesaw State University, Kennesaw, GA.
 
 **EXHIBITIONS**
 
@@ -71,24 +67,3 @@ title: cv
 
 \- *Skate or Die V*, Youngblood Gallery, Atlanta, Georgia (Group)
 
-**PRESS**
-
-\- Grace Raynor, "Trevor Lawrence and the Artist: Two brothers, two remarkable talents," The Athletic, 29 January 2021, [Link](https://theathletic.com/2352246/2021/01/29/trevor-lawrence-brother-nfl-draft/)[](https://theathletic.com/2352246/2021/01/29/trevor-lawrence-brother-nfl-draft/)
-
-\- Shelly Tuscano, "Checkout Chase Lawrence’s Artwork," Voyage ATL, The Thought-Provokers, 24 July 2018, [Link](http://voyageatl.com/interview/check-chase-lawrences-artwork/)
-
-\- Lily Tischner, "#POPstart: Youth in Revolt, Youth to Remember," DK Contemporary Gallery, 14 June 2018, [Link](http://dkgallery.us/popstart-youth-in-revolt-youth-to-remember/)
-
-\- Shelly Tuscano, “Art & Life With Brooke Barrett,” Voyage ATL,, The Thought-Provokers, 11 September 2018, [Link](http://voyageatl.com/interview/art-life-brooke-barrett/) 
-
-**SELECTED COLLECTIONS**
-
-\- Jon Shroeder. Two-time Emmy Award Winning Screenwriter for *Bob's Burgers*. Private collection. Los Angeles, CA. Painting: "A Midwinter Night's Moon" (2020)
-
-\- Ken Rudo. Former State Toxicologist of North Carolina. Private Collection. Summerville, SC. Artwork: “Eschatos” (2017)
-
-**HONORS & AWARDS**
-
-\- Juror’s Choice Award, *Visions 34th Annual Student Exhibition*, Juried by Tori Tinsley, Sponsored by Fine Arts Gallery, Kennesaw State University, Kennesaw, Georgia. 2017
-
-\- Honorable Mention, *Positive/Negative 33 National Exhibition*, Slocumb Galleries, Johnson City, Tennessee. 2018
