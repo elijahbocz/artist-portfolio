@@ -4,13 +4,14 @@ import { Link } from "gatsby";
 
 const StyledDiv = styled.div`
   margin-left: 5rem;
+  margin-right: 0.5rem;
   a {
     color: #a50909;
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.1rem;
-    margin: 0.9rem;
+    margin: 1rem;
     text-decoration: none;
     text-transform: uppercase;
   }
